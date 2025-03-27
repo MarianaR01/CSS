@@ -3,17 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS INTRO</title>
+    <title>CSS INTERNAL</title>
+    <style>
+        /*Hay que seleccionar el elemento, en primer lugar
+        Por lo cual necesitamos estudiar los selectores basicos*/
+
+        /*Selector por el nombre de el elemento, es deccir, por el nombre de la etiqueta (tag)*/
+
+        h1 {
+            width: 70%;
+            height: 150px;
+            border: 5px solid red;
+            background-color: green;
+            color: aqua;
+            text-align: center;
+        }
+
+        /* Seleccionar por el atributo id del elemento */
+
+        #encabezado2 {
+            padding: 40px;
+            text-align: right;
+        }
+
+        /* Seleccionar por el atributo de clase (class) del elemento, 
+        que permite seleccionar varios elementos que sean de la misma clase */
+
+        .info {
+            color: coral;
+        }
+
+    </style>
 </head>
 <body>
-    <h1 style="width: 500px; 
-               height: 200px; 
-               border-width: 10px 15px;
-               border-color: blueviolet;
-               border-style: dashed;
-               padding: 20px;"
-     >Introduccion a las Hojas de Estilo en Cascada (CSS) (Cascading Style Sheets)
+    <h1 id="encabezado1">
+        Introduccion a las Hojas de Estilo en Cascada (CSS) (Cascading Style Sheets)
     </h1>
-    <h1>Otro elemento HTML para comparar</h1>
+
+    <h1 id="encabezado2">
+        Otro elemento HTML para comparar
+    </h1>
+
+    <h2>
+        Selector de CSS por el atributo class
+    </h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tempore natus, quas aperiam earum nisi voluptatum maiores unde hic explicabo. Recusandae repellat eius accusamus velit. Vero iure nisi ducimus necessitatibus!</p>
+
+    <p id="parrafo1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem assumenda veniam fugit neque, id praesentium ducimus harum molestias consequatur vel dicta quidem placeat, recusandae dolorem quo error iusto accusantium. Saepe!</p>
+    <p id="parrafo2">Deserunt ea fuga ipsum odit qui dolorum repellendus, quidem suscipit praesentium ullam obcaecati ab itaque aperiam provident error voluptates cupiditate consequatur perferendis temporibus officiis nemo? Sed veniam quam voluptatem ipsum!</p>
+
+    <p class="info" id="par1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, asperiores molestiae. Doloremque molestias impedit minus modi aspernatur animi, vero, adipisci dicta deserunt accusantium autem eligendi nam doloribus assumenda velit fugit.</p>
+    <p class="info" id="par2">Delectus veritatis recusandae ea, enim dolores debitis corporis veniam officiis adipisci voluptates, quam maxime numquam facilis. Sit, magni quod. Vitae perferendis, iste ipsum ipsam amet iusto modi voluptatem numquam aut!</p>
+    <p class="info" id="par3">Quia esse est fugit harum, vero ad, quisquam saepe, ipsa exercitationem quae labore animi consectetur veniam qui. Cum recusandae veritatis aliquid quaerat, debitis in odit sapiente, modi odio beatae minima.</p>
+    
 </body>
 </html>
